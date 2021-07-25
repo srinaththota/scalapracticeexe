@@ -31,9 +31,17 @@ object ControlAbstraction extends Enumeration{
       OverridingExe.method()
       println("===================================")
       CastingExe.method()
+      println("================================")
+      println("=======object equality===========")
+      ObjectEquality.method()
     //  val ww=scala.io.StdIn.readLine();
     //  println(matchingCheck(ww.toInt))
-
+      println("===============================")
+      println("====Lower Bound================")
+      LowerBoundExe.method()
+      println("===============================")
+      println("====Arithematic Exception================")
+      ExceptionExe.method()
 
     }
   def lengthOfString(name:String):Boolean ={
