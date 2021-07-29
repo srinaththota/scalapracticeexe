@@ -61,6 +61,15 @@ object ControlAbstraction extends Enumeration{
       new ScalaCollections().listExamples()
       new ScalaCollections().arrayExamples()
       new ScalaCollections().smallBenchMark()
+      println("===============================")
+      println("====Scala tailrec==========")
+      new TailRecExe().method()
+      println("===============================")
+      println("==Implicit conversion==========")
+      new ImplicitConversionExe().method()
+      println("===============================")
+      println("==========Code Block ==========")
+      new CodeBlockExe().method()
     }
   def lengthOfString(name:String):Boolean ={
     name.length > 6
