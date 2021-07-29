@@ -42,7 +42,25 @@ object ControlAbstraction extends Enumeration{
       println("===============================")
       println("====Arithematic Exception================")
       ExceptionExe.method()
-
+      println("===============================")
+      println("====EitherExample================")
+      val eitherx=ScalaEitherExe.method("Sri")
+      eitherx match {
+        case Left(l)=>println(l)
+        case Right(s)=>println(s)
+      }
+      println("===============================")
+      println("====Higher order Exe================")
+      HigherOrderExe.method()
+      println("===============================")
+      println("====Call By Name================")
+      CallByNameExe.method()
+      println("===============================")
+      println("====Scala Collections================")
+      new ScalaCollections().method()
+      new ScalaCollections().listExamples()
+      new ScalaCollections().arrayExamples()
+      new ScalaCollections().smallBenchMark()
     }
   def lengthOfString(name:String):Boolean ={
     name.length > 6
